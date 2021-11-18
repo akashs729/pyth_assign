@@ -192,3 +192,50 @@ To obtain the same answer in Python 3.0 use floored ( // integer) division.
 >>> minute//60
 
 0
+
+# Expressions
+
+An expression is a combination of values, variables, and operators. A value all by
+itself is considered an expression, and so is a variable, so the following are all legal
+expressions (assuming that the variable x has been assigned a value):
+
+17
+
+x
+
+x + 17
+
+If you type an expression in interactive mode, the interpreter evaluates it and
+displays the result:
+
+>>> 1 + 1
+
+2
+
+But in a script, an expression all by itself doesn’t do anything! This is a common
+source of confusion for beginners.
+
+# Order of operations
+
+When more than one operator appears in an expression, the order of evaluation
+depends on the rules of precedence. For mathematical operators, Python follows
+mathematical convention. The acronym PEMDAS is a useful way to remember
+the rules:
+
+• Parentheses have the highest precedence and can be used to force an expression
+to evaluate in the order you want. Since expressions in parentheses are
+evaluated first, 2 * (3-1) is 4, and (1+1)**(5-2) is 8. You can also use
+parentheses to make an expression easier to read, as in (minute * 100) /
+60, even if it doesn’t change the result.
+
+• Exponentiation has the next highest precedence, so 2**1+1 is 3, not 4, and
+3*1**3 is 3, not 27.
+
+• Multiplication and Division have the same precedence, which is higher than
+Addition and Subtraction, which also have the same precedence. So 2*3-1
+is 5, not 4, and 6+4/2 is 8, not 5.
+
+• Operators with the same precedence are evaluated from left to right. So the
+expression 5-3-1 is 1, not 3, because the 5-3 happens first and then 1 is
+subtracted from 2.
+
