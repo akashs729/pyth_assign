@@ -9,9 +9,11 @@ can identify strings because they are enclosed in quotation marks.
 
 If you are not sure what type a value has, the interpreter can tell you.
 >>> type('Hello, World!')
+
 <class 'str'>
 
 >>> type(17)
+
 <class 'int'>
 
 Strings belong to the type str and integers belong to the type
