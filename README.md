@@ -134,10 +134,15 @@ statement, the results appear one at a time as the statements execute.
 For example, the script
 
 >>>print(1)
+
 >>>x = 2
+
 >>>print(x)
->>>
+
 produces the output
+
 1
+
 2
+
 The assignment statement produces no output.
