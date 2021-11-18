@@ -239,3 +239,110 @@ is 5, not 4, and 6+4/2 is 8, not 5.
 expression 5-3-1 is 1, not 3, because the 5-3 happens first and then 1 is
 subtracted from 2.
 
+# Modulus operator
+
+The modulus operator works on integers and yields the remainder when the first
+operand is divided by the second. In Python, the modulus operator is a percent
+sign (%). The syntax is the same as for other operators:
+
+>>> quotient = 7 // 3
+
+>>> print(quotient)
+
+2
+
+>>> remainder = 7 % 3
+
+>>> print(remainder)
+
+1
+
+So 7 divided by 3 is 2 with 1 left over.
+
+The modulus operator turns out to be surprisingly useful. For example, you can
+check whether one number is divisible by another: if x % y is zero, then x is
+divisible by y.
+
+You can also extract the right-most digit or digits from a number. For example,
+x % 10 yields the right-most digit of x (in base 10). Similarly, x % 100 yields the
+last two digits.
+
+
+# String operations
+
+The + operator works with strings, but it is not addition in the mathematical sense.
+Instead it performs concatenation, which means joining the strings by linking them
+end to end. For example:
+
+>>> first = 10
+
+>>> second = 15
+
+>>> print(first+second)
+
+25
+
+>>> first = '100'
+
+>>> second = '150'
+
+>>> print(first + second)
+
+100150
+
+The * operator also works with strings by multiplying the content of a string by
+an integer. For example:
+
+>>> first = 'Test '
+
+>>> second = 3
+
+>>> print(first * second)
+
+Test Test Test
+
+# Asking the user for input
+
+Sometimes we would like to take the value for a variable from the user via their
+keyboard. Python provides a built-in function called input that gets input from
+the keyboard1. When this function is called, the program stops and waits for the
+user to type something. When the user presses Return or Enter, the program
+resumes and input returns what the user typed as a string.
+
+>>> inp = input()
+
+Some silly stuff
+
+>>> print(inp)
+
+Some silly stuff
+
+Before getting input from the user, it is a good idea to print a prompt telling the
+user what to input. 
+You can pass a string to input to be displayed to the user
+before pausing for input:
+
+>>> name = input('What is your name?\n')
+
+What is your name?
+
+Chuck
+
+>>> print(name)
+
+Chuck
+
+The sequence \n at the end of the prompt represents a newline, which is a special
+character that causes a line break. That’s why the user’s input appears below the
+prompt.
+
+If you expect the user to type an integer, you can try to convert the return value
+to int using the int() function:
+
+>>> prompt = 'What...is the airspeed velocity of an unladen swallow?\n'
+
+>>> speed = input(prompt)
+
+What...is the airspeed velocity of an unladen swallow?
+
+17
