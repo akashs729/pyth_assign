@@ -14,11 +14,19 @@ If you are not sure what type a value has, the interpreter can tell you.
 >>> type(17)
 <class 'int'>
 
-Not surprisingly, strings belong to the type str and integers belong to the type
+Strings belong to the type str and integers belong to the type
 int. Numbers with a decimal point belong to a type called float,
 because these numbers are represented in a format called floating point.
 >>> type(3.2)
 <class 'float'>
 
-What about values like “17” and “3.2”? They look like numbers, but they are in
+Values like “17” and “3.2”? They look like numbers, but they are in
 quotation marks like strings.
+
+>>> type('17')
+<class 'str'>
+
+>>> type('3.2')
+<class 'str'>
+
+They’re strings.
