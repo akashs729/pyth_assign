@@ -142,7 +142,6 @@ For example, the script
 produces the output
 
 1
-
 2
 
 The assignment statement produces no output.
