@@ -393,9 +393,11 @@ It is reasonable to assume that the reader can figure out what the code does; it
 much more useful to explain why.
 
 This comment is redundant with the code and useless:
+
 v = 5 # assign 5 to v
 
 This comment contains useful information that is not in the code:
+
 v = 5 # velocity in meters/second.
 
 Good variable names can reduce the need for comments, but long names can make
