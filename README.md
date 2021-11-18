@@ -53,6 +53,7 @@ The first assigns a string to a new variable
 named message; the second assigns the integer 17 to n; the third assigns the
 (approximate) value of π to pi.
 
+
 To display the value of a variable, you can use a print statement:
 >>> print(n)
 
@@ -61,6 +62,7 @@ To display the value of a variable, you can use a print statement:
 >>> print(pi)
 
 3.141592653589793
+
 
 The type of a variable is the type of the value it refers to.
 
